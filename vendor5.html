@@ -1,0 +1,14 @@
+<html>
+<head>
+<script>
+function myFunction(x) {
+  x.style.background = "red";
+  var doc=document.getElementById("background");
+  doc.style.background="yellow"
+}
+</script>
+<head>
+<body id="background" >
+Enter your name: <input type="text" onfocus="myFunction(this)">
+</body>
+</html>

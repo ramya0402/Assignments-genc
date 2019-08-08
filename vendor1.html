@@ -1,0 +1,21 @@
+<html>
+<head>
+<script>
+var i = 0;
+function change() {
+  var doc = document.getElementById("background");
+   var doc1 = document.getElementById("but");
+  var color = ["black", "blue", "brown", "green"];
+  var color1 = ["brown", "green","black","blue"];
+  doc.style.backgroundColor = color[i];
+  doc1.style.backgroundColor=color1[i];
+  i = (i + 1) % color.length;
+}
+setInterval(change, 1000);
+</script>
+</head>
+<body id="background">
+
+<input type="button" name="submit" value="submit" width="60px" height="40px" id="but">
+</body>
+</html>
