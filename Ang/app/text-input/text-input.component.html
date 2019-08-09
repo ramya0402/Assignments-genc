@@ -1,0 +1,18 @@
+
+<br>
+<h1>{{typeInput}}</h1>
+
+<input type="text" [(ngModel)] = 'typeInput' name="" class="item" #item pattern="[A-Za-z0-9]{1,20}">
+<br><br>
+    <button class="btn-add-item" (click)="create(item.value)">Add Row</button>
+    <!-- {{visible ? 'Hide' : 'Show' }} -->
+<br>
+<br>
+
+    <table>
+        <th>Your Entered values</th>
+        <tr *ngFor="let data of tableData">
+            <td *ngIf="data.text != ''">{{data.text}}</td>
+        </tr>
+    </table>
+    
